@@ -127,7 +127,7 @@ public class CanvasView extends View implements SensorEventListener {
         //每一格的大小
         float unit = max / 10;
         if(computeY <= (cy+max) && computeY >= (cy-max)){
-            computeY = cy + unit * Y;
+            computeY = cy + ((int) (unit * Y *10)) / 10;
         }else if(computeY > (cy+max)){
             computeY = cy+max;
         }else if(computeY < (cy-max)){
@@ -135,7 +135,7 @@ public class CanvasView extends View implements SensorEventListener {
         }
 
         if(computeX <= (cx+max) && computeX >= (cx-max)){
-            computeX = cx + unit * X;
+            computeX = cx + ((int) (unit * X * 10)) / 10;
         }else if(computeX > (cx+max)){
             computeX = cx+max;
         }else if(computeX < (cx-max)){
