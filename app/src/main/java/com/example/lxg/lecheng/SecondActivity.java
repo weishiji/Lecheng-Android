@@ -16,13 +16,11 @@ import com.com.lxg.widgets.CanvasView;
  * Created by lxg on 18/08/2017.
  */
 
-public class CanvasActivity extends Activity {
-    CanvasView cv;
+public class SecondActivity extends Activity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.gyro);
-
 
     }
 

@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CanvasActivity">
+        <activity android:name=".SecondActivity">
 
         </activity>
     </application>
